@@ -1,0 +1,24 @@
+//
+//  Project.Release.xcconfig
+//  TestApp2
+//
+//  Created by Mikhail Kalinin on 10.10.19.
+//  Copyright © 2019 Mikhail Kalinin. All rights reserved.
+//
+
+
+
+#include "Project.Default.xcconfig"
+
+
+
+DEBUG_INFORMATION_FORMAT = dwarf-with-dsym
+
+ENABLE_NS_ASSERTIONS = NO
+
+MTL_ENABLE_DEBUG_INFO = NO
+
+SWIFT_COMPILATION_MODE = wholemodule
+SWIFT_OPTIMIZATION_LEVEL = -O
+
+VALIDATE_PRODUCT = YES

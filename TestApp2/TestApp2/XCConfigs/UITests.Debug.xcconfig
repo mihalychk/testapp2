@@ -1,0 +1,11 @@
+//
+//  UITests.Debug.xcconfig
+//  TestApp2
+//
+//  Created by Mikhail Kalinin on 10.10.19.
+//  Copyright © 2019 Mikhail Kalinin. All rights reserved.
+//
+
+
+
+#include "UITests.Default.xcconfig"

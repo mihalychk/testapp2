@@ -1,0 +1,467 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4D6171BC23524284002BC7AF /* Tests.Network.Task.Notifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6171BB23524284002BC7AF /* Tests.Network.Task.Notifier.swift */; };
+		4DF021472350842A0041FA28 /* TestSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DF0213D2350842A0041FA28 /* TestSDK.framework */; };
+		4DF0214E2350842A0041FA28 /* TestSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DF021402350842A0041FA28 /* TestSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4DF021B1235086B50041FA28 /* Network.Task.Manageable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF021A7235086B50041FA28 /* Network.Task.Manageable.swift */; };
+		4DF021B2235086B50041FA28 /* Network.Manager.Session.Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF021A8235086B50041FA28 /* Network.Manager.Session.Delegate.swift */; };
+		4DF021B3235086B50041FA28 /* Network.Subtaskable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF021A9235086B50041FA28 /* Network.Subtaskable.swift */; };
+		4DF021B4235086B50041FA28 /* Network.Manageable.Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF021AA235086B50041FA28 /* Network.Manageable.Task.swift */; };
+		4DF021B5235086B50041FA28 /* Network.Task.Notifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF021AB235086B50041FA28 /* Network.Task.Notifier.swift */; };
+		4DF021B6235086B50041FA28 /* Network.Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF021AC235086B50041FA28 /* Network.Manager.swift */; };
+		4DF021B7235086B50041FA28 /* Network.Downloadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF021AD235086B50041FA28 /* Network.Downloadable.swift */; };
+		4DF021B8235086B50041FA28 /* URLSessionDataTask.ManageableTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF021AE235086B50041FA28 /* URLSessionDataTask.ManageableTask.swift */; };
+		4DF021B9235086B50041FA28 /* Network.Session.Handler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF021AF235086B50041FA28 /* Network.Session.Handler.swift */; };
+		4DF021BA235086B50041FA28 /* Network.Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF021B0235086B50041FA28 /* Network.Task.swift */; };
+		4DF021C2235086FC0041FA28 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF021BC235086FC0041FA28 /* Data.swift */; };
+		4DF021C3235086FC0041FA28 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF021BD235086FC0041FA28 /* Logger.swift */; };
+		4DF021C4235086FC0041FA28 /* QueueableCallbacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF021BE235086FC0041FA28 /* QueueableCallbacks.swift */; };
+		4DF021C5235086FC0041FA28 /* TaskManageable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF021BF235086FC0041FA28 /* TaskManageable.swift */; };
+		4DF021C6235086FC0041FA28 /* Subtaskable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF021C0235086FC0041FA28 /* Subtaskable.swift */; };
+		4DF021C7235086FC0041FA28 /* ManageableTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF021C1235086FC0041FA28 /* ManageableTask.swift */; };
+		4DF021C9235088080041FA28 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF021C8235088080041FA28 /* String.swift */; };
+		4DF021CB235089070041FA28 /* SDKApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF021CA235089070041FA28 /* SDKApi.swift */; };
+		4DF021D323508A4E0041FA28 /* Tests.Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF021CD23508A4E0041FA28 /* Tests.Data.swift */; };
+		4DF021D523508A4E0041FA28 /* Tests.Network.Downloadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF021D023508A4E0041FA28 /* Tests.Network.Downloadable.swift */; };
+		4DF021D623508A4E0041FA28 /* Tests.Network.Task.Manageable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF021D123508A4E0041FA28 /* Tests.Network.Task.Manageable.swift */; };
+		4DF021D723508A4E0041FA28 /* Tests.Network.Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF021D223508A4E0041FA28 /* Tests.Network.Task.swift */; };
+		4DF021DC23508A730041FA28 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 4DF021DA23508A730041FA28 /* data.json */; };
+		4DF021DD23508A730041FA28 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF021DB23508A730041FA28 /* Helper.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4DF021482350842A0041FA28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4DF021342350842A0041FA28 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4DF0213C2350842A0041FA28;
+			remoteInfo = TestSDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4D6171BB23524284002BC7AF /* Tests.Network.Task.Notifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.Network.Task.Notifier.swift; sourceTree = "<group>"; };
+		4DF0213D2350842A0041FA28 /* TestSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TestSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DF021402350842A0041FA28 /* TestSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestSDK.h; sourceTree = "<group>"; };
+		4DF021412350842A0041FA28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DF021462350842A0041FA28 /* TestSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DF0214D2350842A0041FA28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DF02158235084770041FA28 /* Tests.Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Tests.Debug.xcconfig; sourceTree = "<group>"; };
+		4DF02159235084770041FA28 /* Tests.Default.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Tests.Default.xcconfig; sourceTree = "<group>"; };
+		4DF0215A235084770041FA28 /* TestSDK.Default.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = TestSDK.Default.xcconfig; sourceTree = "<group>"; };
+		4DF0215B235084770041FA28 /* Project.Default.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Project.Default.xcconfig; sourceTree = "<group>"; };
+		4DF0215C235084770041FA28 /* Tests.Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Tests.Release.xcconfig; sourceTree = "<group>"; };
+		4DF0215D235084770041FA28 /* Project.Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Project.Debug.xcconfig; sourceTree = "<group>"; };
+		4DF0215E235084770041FA28 /* TestSDK.Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = TestSDK.Debug.xcconfig; sourceTree = "<group>"; };
+		4DF0215F235084770041FA28 /* Project.Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Project.Release.xcconfig; sourceTree = "<group>"; };
+		4DF02160235084770041FA28 /* TestSDK.Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = TestSDK.Release.xcconfig; sourceTree = "<group>"; };
+		4DF021A7235086B50041FA28 /* Network.Task.Manageable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.Task.Manageable.swift; sourceTree = "<group>"; };
+		4DF021A8235086B50041FA28 /* Network.Manager.Session.Delegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.Manager.Session.Delegate.swift; sourceTree = "<group>"; };
+		4DF021A9235086B50041FA28 /* Network.Subtaskable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.Subtaskable.swift; sourceTree = "<group>"; };
+		4DF021AA235086B50041FA28 /* Network.Manageable.Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.Manageable.Task.swift; sourceTree = "<group>"; };
+		4DF021AB235086B50041FA28 /* Network.Task.Notifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.Task.Notifier.swift; sourceTree = "<group>"; };
+		4DF021AC235086B50041FA28 /* Network.Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.Manager.swift; sourceTree = "<group>"; };
+		4DF021AD235086B50041FA28 /* Network.Downloadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.Downloadable.swift; sourceTree = "<group>"; };
+		4DF021AE235086B50041FA28 /* URLSessionDataTask.ManageableTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionDataTask.ManageableTask.swift; sourceTree = "<group>"; };
+		4DF021AF235086B50041FA28 /* Network.Session.Handler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.Session.Handler.swift; sourceTree = "<group>"; };
+		4DF021B0235086B50041FA28 /* Network.Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.Task.swift; sourceTree = "<group>"; };
+		4DF021BC235086FC0041FA28 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		4DF021BD235086FC0041FA28 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		4DF021BE235086FC0041FA28 /* QueueableCallbacks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueueableCallbacks.swift; sourceTree = "<group>"; };
+		4DF021BF235086FC0041FA28 /* TaskManageable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskManageable.swift; sourceTree = "<group>"; };
+		4DF021C0235086FC0041FA28 /* Subtaskable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Subtaskable.swift; sourceTree = "<group>"; };
+		4DF021C1235086FC0041FA28 /* ManageableTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManageableTask.swift; sourceTree = "<group>"; };
+		4DF021C8235088080041FA28 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		4DF021CA235089070041FA28 /* SDKApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDKApi.swift; sourceTree = "<group>"; };
+		4DF021CD23508A4E0041FA28 /* Tests.Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tests.Data.swift; sourceTree = "<group>"; };
+		4DF021D023508A4E0041FA28 /* Tests.Network.Downloadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tests.Network.Downloadable.swift; sourceTree = "<group>"; };
+		4DF021D123508A4E0041FA28 /* Tests.Network.Task.Manageable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tests.Network.Task.Manageable.swift; sourceTree = "<group>"; };
+		4DF021D223508A4E0041FA28 /* Tests.Network.Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tests.Network.Task.swift; sourceTree = "<group>"; };
+		4DF021DA23508A730041FA28 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		4DF021DB23508A730041FA28 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4DF0213A2350842A0041FA28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DF021432350842A0041FA28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DF021472350842A0041FA28 /* TestSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4DF021332350842A0041FA28 = {
+			isa = PBXGroup;
+			children = (
+				4DF0213F2350842A0041FA28 /* TestSDK */,
+				4DF0214A2350842A0041FA28 /* TestSDKTests */,
+				4DF0213E2350842A0041FA28 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4DF0213E2350842A0041FA28 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4DF0213D2350842A0041FA28 /* TestSDK.framework */,
+				4DF021462350842A0041FA28 /* TestSDKTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4DF0213F2350842A0041FA28 /* TestSDK */ = {
+			isa = PBXGroup;
+			children = (
+				4DF021BB235086FC0041FA28 /* Foundation */,
+				4DF021A6235086B50041FA28 /* Network */,
+				4DF02157235084770041FA28 /* XCConfigs */,
+				4DF021CA235089070041FA28 /* SDKApi.swift */,
+				4DF021402350842A0041FA28 /* TestSDK.h */,
+				4DF021412350842A0041FA28 /* Info.plist */,
+			);
+			path = TestSDK;
+			sourceTree = "<group>";
+		};
+		4DF0214A2350842A0041FA28 /* TestSDKTests */ = {
+			isa = PBXGroup;
+			children = (
+				4DF021CC23508A4E0041FA28 /* Foundation */,
+				4DF021D823508A730041FA28 /* Mocks */,
+				4DF021CF23508A4E0041FA28 /* Network */,
+				4DF0214D2350842A0041FA28 /* Info.plist */,
+			);
+			path = TestSDKTests;
+			sourceTree = "<group>";
+		};
+		4DF02157235084770041FA28 /* XCConfigs */ = {
+			isa = PBXGroup;
+			children = (
+				4DF0215D235084770041FA28 /* Project.Debug.xcconfig */,
+				4DF0215B235084770041FA28 /* Project.Default.xcconfig */,
+				4DF0215F235084770041FA28 /* Project.Release.xcconfig */,
+				4DF02158235084770041FA28 /* Tests.Debug.xcconfig */,
+				4DF02159235084770041FA28 /* Tests.Default.xcconfig */,
+				4DF0215C235084770041FA28 /* Tests.Release.xcconfig */,
+				4DF0215E235084770041FA28 /* TestSDK.Debug.xcconfig */,
+				4DF0215A235084770041FA28 /* TestSDK.Default.xcconfig */,
+				4DF02160235084770041FA28 /* TestSDK.Release.xcconfig */,
+			);
+			path = XCConfigs;
+			sourceTree = "<group>";
+		};
+		4DF021A6235086B50041FA28 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				4DF021AD235086B50041FA28 /* Network.Downloadable.swift */,
+				4DF021AA235086B50041FA28 /* Network.Manageable.Task.swift */,
+				4DF021AC235086B50041FA28 /* Network.Manager.swift */,
+				4DF021A8235086B50041FA28 /* Network.Manager.Session.Delegate.swift */,
+				4DF021AF235086B50041FA28 /* Network.Session.Handler.swift */,
+				4DF021A9235086B50041FA28 /* Network.Subtaskable.swift */,
+				4DF021B0235086B50041FA28 /* Network.Task.swift */,
+				4DF021A7235086B50041FA28 /* Network.Task.Manageable.swift */,
+				4DF021AB235086B50041FA28 /* Network.Task.Notifier.swift */,
+				4DF021AE235086B50041FA28 /* URLSessionDataTask.ManageableTask.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		4DF021BB235086FC0041FA28 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				4DF021BC235086FC0041FA28 /* Data.swift */,
+				4DF021BD235086FC0041FA28 /* Logger.swift */,
+				4DF021C1235086FC0041FA28 /* ManageableTask.swift */,
+				4DF021BE235086FC0041FA28 /* QueueableCallbacks.swift */,
+				4DF021C8235088080041FA28 /* String.swift */,
+				4DF021C0235086FC0041FA28 /* Subtaskable.swift */,
+				4DF021BF235086FC0041FA28 /* TaskManageable.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		4DF021CC23508A4E0041FA28 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				4DF021CD23508A4E0041FA28 /* Tests.Data.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		4DF021CF23508A4E0041FA28 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				4DF021D023508A4E0041FA28 /* Tests.Network.Downloadable.swift */,
+				4DF021D123508A4E0041FA28 /* Tests.Network.Task.Manageable.swift */,
+				4D6171BB23524284002BC7AF /* Tests.Network.Task.Notifier.swift */,
+				4DF021D223508A4E0041FA28 /* Tests.Network.Task.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		4DF021D823508A730041FA28 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				4DF021D923508A730041FA28 /* Foundation */,
+				4DF021DB23508A730041FA28 /* Helper.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		4DF021D923508A730041FA28 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				4DF021DA23508A730041FA28 /* data.json */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4DF021382350842A0041FA28 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DF0214E2350842A0041FA28 /* TestSDK.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4DF0213C2350842A0041FA28 /* TestSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DF021512350842A0041FA28 /* Build configuration list for PBXNativeTarget "TestSDK" */;
+			buildPhases = (
+				4DF021382350842A0041FA28 /* Headers */,
+				4DF021392350842A0041FA28 /* Sources */,
+				4DF0213A2350842A0041FA28 /* Frameworks */,
+				4DF0213B2350842A0041FA28 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestSDK;
+			productName = TestSDK;
+			productReference = 4DF0213D2350842A0041FA28 /* TestSDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4DF021452350842A0041FA28 /* TestSDKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DF021542350842A0041FA28 /* Build configuration list for PBXNativeTarget "TestSDKTests" */;
+			buildPhases = (
+				4DF021422350842A0041FA28 /* Sources */,
+				4DF021432350842A0041FA28 /* Frameworks */,
+				4DF021442350842A0041FA28 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4DF021492350842A0041FA28 /* PBXTargetDependency */,
+			);
+			name = TestSDKTests;
+			productName = TestSDKTests;
+			productReference = 4DF021462350842A0041FA28 /* TestSDKTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4DF021342350842A0041FA28 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "Mikhail Kalinin";
+				TargetAttributes = {
+					4DF0213C2350842A0041FA28 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					4DF021452350842A0041FA28 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+				};
+			};
+			buildConfigurationList = 4DF021372350842A0041FA28 /* Build configuration list for PBXProject "TestSDK" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4DF021332350842A0041FA28;
+			productRefGroup = 4DF0213E2350842A0041FA28 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4DF0213C2350842A0041FA28 /* TestSDK */,
+				4DF021452350842A0041FA28 /* TestSDKTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4DF0213B2350842A0041FA28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DF021442350842A0041FA28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DF021DC23508A730041FA28 /* data.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4DF021392350842A0041FA28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DF021BA235086B50041FA28 /* Network.Task.swift in Sources */,
+				4DF021C6235086FC0041FA28 /* Subtaskable.swift in Sources */,
+				4DF021B1235086B50041FA28 /* Network.Task.Manageable.swift in Sources */,
+				4DF021B6235086B50041FA28 /* Network.Manager.swift in Sources */,
+				4DF021B3235086B50041FA28 /* Network.Subtaskable.swift in Sources */,
+				4DF021C2235086FC0041FA28 /* Data.swift in Sources */,
+				4DF021B9235086B50041FA28 /* Network.Session.Handler.swift in Sources */,
+				4DF021CB235089070041FA28 /* SDKApi.swift in Sources */,
+				4DF021B5235086B50041FA28 /* Network.Task.Notifier.swift in Sources */,
+				4DF021C4235086FC0041FA28 /* QueueableCallbacks.swift in Sources */,
+				4DF021C3235086FC0041FA28 /* Logger.swift in Sources */,
+				4DF021B8235086B50041FA28 /* URLSessionDataTask.ManageableTask.swift in Sources */,
+				4DF021B4235086B50041FA28 /* Network.Manageable.Task.swift in Sources */,
+				4DF021B7235086B50041FA28 /* Network.Downloadable.swift in Sources */,
+				4DF021B2235086B50041FA28 /* Network.Manager.Session.Delegate.swift in Sources */,
+				4DF021C9235088080041FA28 /* String.swift in Sources */,
+				4DF021C5235086FC0041FA28 /* TaskManageable.swift in Sources */,
+				4DF021C7235086FC0041FA28 /* ManageableTask.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DF021422350842A0041FA28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DF021D523508A4E0041FA28 /* Tests.Network.Downloadable.swift in Sources */,
+				4D6171BC23524284002BC7AF /* Tests.Network.Task.Notifier.swift in Sources */,
+				4DF021DD23508A730041FA28 /* Helper.swift in Sources */,
+				4DF021D323508A4E0041FA28 /* Tests.Data.swift in Sources */,
+				4DF021D723508A4E0041FA28 /* Tests.Network.Task.swift in Sources */,
+				4DF021D623508A4E0041FA28 /* Tests.Network.Task.Manageable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4DF021492350842A0041FA28 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4DF0213C2350842A0041FA28 /* TestSDK */;
+			targetProxy = 4DF021482350842A0041FA28 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4DF0214F2350842A0041FA28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DF0215D235084770041FA28 /* Project.Debug.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		4DF021502350842A0041FA28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DF0215F235084770041FA28 /* Project.Release.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		4DF021522350842A0041FA28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DF0215E235084770041FA28 /* TestSDK.Debug.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		4DF021532350842A0041FA28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DF02160235084770041FA28 /* TestSDK.Release.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		4DF021552350842A0041FA28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DF02158235084770041FA28 /* Tests.Debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+			};
+			name = Debug;
+		};
+		4DF021562350842A0041FA28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DF0215C235084770041FA28 /* Tests.Release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4DF021372350842A0041FA28 /* Build configuration list for PBXProject "TestSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DF0214F2350842A0041FA28 /* Debug */,
+				4DF021502350842A0041FA28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DF021512350842A0041FA28 /* Build configuration list for PBXNativeTarget "TestSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DF021522350842A0041FA28 /* Debug */,
+				4DF021532350842A0041FA28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DF021542350842A0041FA28 /* Build configuration list for PBXNativeTarget "TestSDKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DF021552350842A0041FA28 /* Debug */,
+				4DF021562350842A0041FA28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4DF021342350842A0041FA28 /* Project object */;
+}

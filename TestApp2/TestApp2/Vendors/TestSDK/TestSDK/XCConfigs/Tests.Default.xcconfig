@@ -1,0 +1,16 @@
+//
+//  Tests.Default.xcconfig
+//  TestSDK
+//
+//  Created by Mikhail Kalinin on 10.10.19.
+//  Copyright © 2019 Mikhail Kalinin. All rights reserved.
+//
+
+
+
+#include "TestSDK.Default.xcconfig"
+
+
+
+INFOPLIST_FILE = TestSDKTests/Info.plist
+PRODUCT_BUNDLE_IDENTIFIER = in.kalin.TestSDKTests

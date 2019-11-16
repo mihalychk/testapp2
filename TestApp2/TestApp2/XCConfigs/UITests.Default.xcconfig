@@ -1,0 +1,17 @@
+//
+//  UITests.Default.xcconfig
+//  TestApp2
+//
+//  Created by Mikhail Kalinin on 10.10.19.
+//  Copyright © 2019 Mikhail Kalinin. All rights reserved.
+//
+
+
+
+#include "TestApp2.Default.xcconfig"
+
+
+
+INFOPLIST_FILE = TestApp2UITests/Info.plist
+PRODUCT_BUNDLE_IDENTIFIER = in.kalin.TestApp2UITests
+TEST_TARGET_NAME = TestApp2
